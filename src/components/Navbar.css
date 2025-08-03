@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.navbar h1 {
+  font-size: 1.5rem;
+  color: #00695c;
+}
+.navbar .links a {
+  margin-left: 1.5rem;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s;
+}
+.navbar .links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: #00897b;
+  transition: width 0.3s;
+}
+.navbar .links a:hover::after,
+.navbar .links a.active::after {
+  width: 100%;
+}

@@ -1,0 +1,98 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.login-card {
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  text-align: center;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  font-weight: bold;
+  color: #555;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.tabs button.active {
+  color: #000;
+  border-color: #000;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  border: none;
+  background: #4a90e2;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background: #357ab8;
+}
+
+.ghost-btn {
+  background: none;
+  border: none;
+  margin-top: 1rem;
+  color: #4a90e2;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
